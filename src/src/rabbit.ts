@@ -1563,6 +1563,8 @@ export const main = async (xrax: string) => {
   const str = btoa(String.fromCharCode.apply(null, num));
   const real = Z(encrypted, str);
 
+  console.log({real, str, encrypted}, "DATA ENCRYPT");
+
   resp_json.sources = real;
 
   return resp_json;

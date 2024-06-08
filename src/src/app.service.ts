@@ -9,7 +9,6 @@ export class AppService {
       return {};
     }
 
-    console.log({ data: 'asdasd' });
 
     return main(id);
   }
