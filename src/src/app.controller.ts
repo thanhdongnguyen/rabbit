@@ -27,10 +27,10 @@ export class AppController {
         return {};
       }
 
-      // const cached: string = await this.cacheManager.get(id);
-      // if (cached) {
-      //   return JSON.parse(cached);
-      // }
+      const cached: string = await this.cacheManager.get(id);
+      if (cached) {
+        return JSON.parse(cached);
+      }
 
       const data = await this.appService.getRabbit(id);
 

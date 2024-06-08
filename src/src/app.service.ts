@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { main } from './rabbit';
+import { extract } from './rabbit';
 
 @Injectable()
 export class AppService {
@@ -9,7 +9,6 @@ export class AppService {
       return {};
     }
 
-
-    return main(id);
+    return extract(id);
   }
 }
