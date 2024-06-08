@@ -34,7 +34,7 @@ export class AppController {
 
       const data = await this.appService.getRabbit(id);
 
-      await this.cacheManager.set(id, JSON.stringify(data), 10000);
+      await this.cacheManager.set(id, JSON.stringify(data), 1200000);
 
       return data;
     } catch (e) {
